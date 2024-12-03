@@ -7,30 +7,53 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <nav class="flex w-screen justify-around sm:flex-nowrap flex-wrap items-center h-[10vh]" id="navbar" style="border-bottom: 1px solid grey">
+    <nav class="bg-transparent flex w-screen justify-around md:flex-nowrap flex-wrap items-center h-[10vh]" id="navbar">
         <img src="logo.png" class="h-[110px]">
-        <div class="ml-auto sm:hidden">
+        <div class="ml-auto md:hidden">
             <button class="text-black" id="nav-toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </button>              
         </div>
-        <div class="sm:flex justify-center w-[70%] hidden">
-            <a href="#" class="no-underline m-[2%]"><b><h5>Home</h5></b></a><p class="m-[2%]"><b>•</b></p>
-            <a href="#" class="no-underline m-[2%]"><b><h5>About</h5></b></a><p class="m-[2%]"><b>•</b></p>
-            <a href="#" class="no-underline m-[2%]"><b><h5>Resources</h5></b></a><p class="m-[2%]"><b>•</b></p>
-            <a href="#" class="no-underline m-[2%]"><b><h5>Contact</h5></b></a>
+        <div class="md:flex justify-center w-[70%] hidden">
+            <a href="#" class="no-underline m-[2%]">
+                <div class="flex items-center rounded-full bg-slate-300 pr-[10px] h-[35px]"><img src="home.png" alt="home-image"><b><h5 class="mr-[10px]">Home</h5></b></div>
+            </a><p class="mx-[2%] mt-[2.5%]"><b>•</b></p>
+            <a href="#" class="no-underline m-[2%]">
+                <div class="flex items-center rounded-full bg-slate-300 pr-[10px] h-[35px]"><img src="Resources.png" alt="resources"><b><h5 class="mr-[10px]">Resources</h5></b></div>
+            </a><p class="mx-[2%] mt-[2.5%]"><b>•</b></p>
+            <a href="#" class="no-underline m-[2%]">
+                <div class="flex items-center rounded-full bg-slate-300 pr-[10px] h-[35px]"><img src="insight.png" alt="contact"><b><h5 class="mr-[10px]">Insight</h5></b></div>
+            </a>
+            <!-- </a><p class="m-[2%]"><b>•</b></p> -->
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 sm:block hidden mr-5">
+        <div class="bg-black rounded-full w-[120px] h-[35px] md:flex hidden justify-center items-center">
+            <h5 class="text-white"><b>About Us</b></h5>
+        </div>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:block hidden mr-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-        </svg>
-        <!-- Menu for small device (Menu untuk perangkat kecil) -->
-        <a href="#" class="no-underline bg-white w-[100%] sm:hidden hidden ml-[45%] nav-menu"><b><h5>Home</h5></b></a>
-        <a href="#" class="no-underline bg-white w-[100%] sm:hidden hidden ml-[45%] nav-menu"><b><h5>About</h5></b></a>
-        <a href="#" class="no-underline bg-white w-[100%] sm:hidden hidden ml-[45%] nav-menu"><b><h5>Resources</h5></b></a>
-        <a href="#" class="no-underline bg-white w-[100%] sm:hidden hidden ml-[45%] nav-menu"><b><h5>Contact</h5></b></a>
-    </nav>
+        </svg> -->
+    </nav><br>
+    <!-- Menu for small device (Menu untuk perangkat kecil) -->
+    <div class="flex flex-col justify-center items-center hidden md:hidden nav-menu h-[10vh] mt-[4vh]">
+        <a href="#" class="no-underline bg-white w-[60%]">
+            <div class="flex items-center rounded-full bg-slate-300 h-[35px] mt-[10px]">
+                <img src="home.png" class="mr-2" alt="home-image"><b><h5>Home</h5></b>
+            </div>
+        </a>
+        <a href="#" class="no-underline bg-white w-[60%]">
+            <div class="flex items-center rounded-full bg-slate-300 h-[35px] mt-[10px]">
+                <img src="Resources.png" class="mr-2" alt="resources"><b><h5>Resources</h5></b>
+            </div>
+        </a>
+        <a href="#" class="no-underline bg-white w-[60%]">
+            <div class="flex items-center rounded-full bg-slate-300 h-[35px] mt-[10px]">
+                <img src="insight.png" class="mr-2" alt="contact"><b><h5>Insight</h5></b>
+            </div>
+        </a>
+    </div>
+    <h1 class="text-center md:mt-[5%] mt-[18%] text-4xl"><b>Power wisely, sustain endlessly.</b></h1>
     <script src="script.js"></script>
 </body>
 </html>
