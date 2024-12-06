@@ -7,15 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <nav class="bg-transparent flex w-screen justify-around md:flex-nowrap flex-wrap items-center h-[10vh]" id="navbar">
+    <nav class="bg-transparent flex w-screen justify-around md:flex-nowrap flex-wrap items-center min-h-[10vh] max-h-[15vh]" id="navbar">
         <img src="logo.png" class="h-[110px] ml-[10px]">
-        <div class="ml-auto md:hidden">
-            <button class="text-black mr-[10px]" id="nav-toggle">
+        <div class="ml-auto md:hidden mr-[10px]">
+            <button class="text-black transition-transform duration-500 rotate-0" id="nav-toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
-            </button>              
-        </div>
+            </button>
+        </div>        
         <div class="md:flex justify-center w-[70%] hidden">
             <a href="#" class="no-underline m-[2%]">
                 <div class="flex items-center rounded-full bg-slate-300 pr-[10px] h-[35px]"><img src="home.png" alt="home-image"><b><h5 class="mr-[10px]">Home</h5></b></div>
@@ -35,25 +35,31 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
         </svg> -->
     </nav><br>
-    <!-- Menu for small device (Menu untuk perangkat kecil) -->
-    <div class="flex flex-col justify-center items-center hidden md:hidden nav-menu h-[10vh] mt-[5vh]">
-        <a href="#" class="no-underline bg-white w-[75%]">
-            <div class="flex items-center rounded-full bg-slate-300 h-[35px] mt-[10px]">
-                <img src="home.png" class="mr-2" alt="home-image"><b><h5>Home</h5></b>
+    <!-- Menu for small devices -->
+    <div class="flex flex-col justify-center items-center hidden md:hidden nav-menu transform scale-y-0 transition-transform duration-300 ease-in-out origin-top">
+        <a href="#" class="no-underline bg-white w-[80%]">
+            <div class="flex items-center justify-center rounded-full bg-black h-[35px]">
+                <b><h5 class="text-white">About Us</h5></b>
             </div>
         </a>
-        <a href="#" class="no-underline bg-white w-[75%]">
-            <div class="flex items-center rounded-full bg-slate-300 h-[35px] mt-[10px]">
-                <img src="Resources.png" class="mr-2" alt="resources"><b><h5>Resources</h5></b>
+        <a href="#" class="no-underline bg-white w-[80%] mt-[10px]">
+            <div class="flex items-center rounded-full bg-slate-300 h-[35px]">
+                <img src="home.png" class="mr-1 sm:ml-[40%] ml-[36%]" alt="home-image"><b><h5>Home</h5></b>
             </div>
         </a>
-        <a href="#" class="no-underline bg-white w-[75%]">
+        <a href="#" class="no-underline bg-white w-[80%]">
             <div class="flex items-center rounded-full bg-slate-300 h-[35px] mt-[10px]">
-                <img src="insight.png" class="mr-2" alt="contact"><b><h5>Insight</h5></b>
+                <img src="Resources.png" class="mr-1 sm:ml-[40%] ml-[36%]" alt="resources"><b><h5>Resources</h5></b>
             </div>
         </a>
-    </div>
+        <a href="#" class="no-underline bg-white w-[80%]">
+            <div class="flex items-center rounded-full bg-slate-300 h-[35px] mt-[10px]">
+                <img src="insight.png" class="mr-1 sm:ml-[40%] ml-[36%]" alt="contact"><b><h5>Insight</h5></b>
+            </div>
+        </a>
+    </div>     
     <h1 class="text-center md:mt-[5%] mt-[18%] text-4xl"><b>Power wisely, sustain endlessly.</b></h1>
     <script src="script.js"></script>
 </body>
+>>>>>>> e96f919aeba75485adfd9ceb117bb390648a88a8
 </html>
